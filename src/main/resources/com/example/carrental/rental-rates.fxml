@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300" prefWidth="450" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental.RentalRatesController">
+    <TableView fx:id="rentalTable" layoutX="10" layoutY="10" prefHeight="280" prefWidth="430">
+        <columns>
+            <TableColumn fx:id="colCategory" prefWidth="100" text="Category" />
+            <TableColumn fx:id="colDaily" prefWidth="80" text="Daily" />
+            <TableColumn fx:id="colWeekly" prefWidth="80" text="Weekly" />
+            <TableColumn fx:id="colMonthly" prefWidth="80" text="Monthly" />
+            <TableColumn prefWidth="89.60001220703123" text="Weekend" />
+        </columns>
+    </TableView>
+</AnchorPane>

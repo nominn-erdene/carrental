@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="250.0" prefWidth="1200" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental.RentalOrderController">
+
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true">
+            <content>
+                <TableView fx:id="tableView" prefWidth="-1.0">
+                    <columns>
+                        <TableColumn fx:id="colReceiptNumber" prefWidth="100" text="Receipt #" />
+                        <TableColumn fx:id="colDateProcessed" prefWidth="90" text="Date Processed" />
+                        <TableColumn fx:id="colProcessedBy" prefWidth="80" text="Processed By" />
+                        <TableColumn fx:id="colFirstName" prefWidth="110" text="Customer First Name" />
+                        <TableColumn fx:id="colLastName" prefWidth="65" text="Last Name" />
+                        <TableColumn fx:id="colAddress" prefWidth="160" text="Address" />
+                        <TableColumn fx:id="colCity" prefWidth="70" text="City" />
+                        <TableColumn fx:id="colState" prefWidth="40" text="State" />
+                        <TableColumn fx:id="colZipCode" prefWidth="70" text="ZIP Code" />
+                        <TableColumn fx:id="colVehicle" prefWidth="100" text="Vehicle" />
+                        <TableColumn fx:id="colCondition" prefWidth="100" text="Condition" />
+                        <TableColumn fx:id="colTankLevel" prefWidth="70" text="Tank Level" />
+                        <TableColumn fx:id="colMileageStart" prefWidth="75" text="Mileage Start" />
+                        <TableColumn fx:id="colMileageEnd" prefWidth="75" text="Mileage End" />
+                        <TableColumn fx:id="colTotalMiles" prefWidth="65" text="Total Miles" />
+                        <TableColumn fx:id="colStartDate" prefWidth="70" text="Start Date" />
+                        <TableColumn fx:id="colEndDate" prefWidth="70" text="End Date" />
+                        <TableColumn fx:id="colTotalDays" prefWidth="65" text="Total Days" />
+                        <TableColumn fx:id="colRateApplied" prefWidth="75" text="Rate Applied" />
+                        <TableColumn fx:id="colSubTotal" prefWidth="75" text="Sub-Total" />
+                        <TableColumn fx:id="colTaxRate" prefWidth="70" text="Tax Rate" />
+                        <TableColumn fx:id="colTaxAmount" prefWidth="55" text="Tax Amt" />
+                        <TableColumn fx:id="colOrderTotal" prefWidth="65" text="Order Total" />
+                        <TableColumn fx:id="colOrderStatus" prefWidth="150" text="Order Status" />
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <padding>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+            </padding>
+            <Button fx:id="btnNewOrder" text="New Rental Order ..." />
+            <Button fx:id="btnUpdateOrder" text="Update Rental Order ..." />
+            <Button fx:id="btnClose" onAction="#handleClose" text="Close" />
+        </HBox>
+    </bottom>
+</BorderPane>
